@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bebinca.css" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="" class="logo" /></a>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2><span>Bebinca</span></h2>
+          <p style="font-size: 20px">
+            Bebinca is a traditional Goan dessert, often referred to as the
+            "Queen of Goan desserts." It is a rich, layered cake made primarily
+            from ingredients like coconut milk, sugar, ghee (clarified butter),
+            egg yolks, and flour. The dessert is known for its unique texture,
+            which is soft, slightly chewy, and fragrant, with alternating layers
+            of caramelized goodness.
+          </p>
+          <a
+            href="#"
+            style="margin-top: 40px"
+            onclick="window.location.href='buybebinca.html'"
+            >Buy now</a
+          >
+        </div>
+        <div class="imgBox">
+          <img
+            src="./assets/images/bebinca.png"
+            class="starbucks"
+            height="200"
+            width="400"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./script.js">
+    function imgSlider(anything){
+      document.querySelector('.starbucks').src = anything;
+    }
+    function changeCircleColor(color){
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+    }
+  </script>
+</html>

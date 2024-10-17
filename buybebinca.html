@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Delicious Bebinca</title>
+    <link rel="stylesheet" href="./buybebinca.css" />
+    <style></style>
+  </head>
+  <body>
+    <h1>Delicious Goan Bebinca</h1>
+
+    <img src="./assets/images/bebinca.png" alt="Bebinca" />
+
+    <div class="container">
+      <div class="description">
+        <h2>About Bebinca</h2>
+        <p>
+          Bebinca is a traditional Goan dessert known for its rich, layered
+          texture and delightful flavor. Made with coconut milk, eggs, and
+          flour, this pudding-like dessert is a must-try for anyone visiting Goa
+          or looking to experience authentic Indian sweets.
+        </p>
+        <h2>Where to Buy</h2>
+        <p>
+          You can purchase our homemade Bebinca right here! We use traditional
+          recipes and high-quality ingredients to ensure you get the most
+          authentic and delicious Bebinca experience.
+        </p>
+      </div>
+      <div class="order">
+        <h2>Order Bebinca</h2>
+        <p>Price: ₹250 per portion</p>
+        <label for="portions">Number of portions:</label>
+        <input type="number" id="portions" min="1" value="1" />
+        <p id="total">Total: ₹250</p>
+        <button onclick="updateTotal()">Update Total</button>
+        <button onclick="alert('Thank you for your order!'); window.href">
+          Place Order
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function updateTotal() {
+        const portions = document.getElementById("portions").value;
+        const total = portions * 250;
+        document.getElementById("total").textContent = `Total: ₹${total}`;
+      }
+    </script>
+  </body>
+</html>

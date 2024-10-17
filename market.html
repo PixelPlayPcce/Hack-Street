@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goan Food Marketplace</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="market.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://blog.goa.marketing/hubfs/goa_logo.png" alt="Goan Food Marketplace Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#marketplace">Marketplace</a></li>
+                <li><a href="#sell">Sell Your Food</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for Goan delicacies...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Goan Marketplace</h1>
+            <p>Discover and sell authentic Goan delicacies</p>
+        </section>
+
+        <section id="marketplace">
+          <h2 id="aaron">Available Goan Products</h2>
+          <div class="filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="foods">Foods</button>
+              <button class="filter-btn" data-filter="textile">Textile</button>
+              <button class="filter-btn" data-filter="goods">Goods</button>
+          </div>
+          <div class="product-grid">
+          </div>
+      </section>
+
+        <section id="sell">
+            <h2>Sell Your Goan Delicacies</h2>
+            <form id="sell-form">
+                <input type="text" placeholder="Product Name" required>
+                <textarea placeholder="Product Description" required></textarea>
+                <input type="number" placeholder="Price (₹)" required>
+                <select required>
+                    <option value="">Select Category</option>
+                    <option value="foods">Foods</option>
+                    <option value="textiles">Textiles</option>
+                    <option value="goods">Goods</option>
+                </select>
+                <input type="file" accept="image/*" required>
+                <button type="submit">List Your Product</button>
+            </form>
+        </section>
+
+      
+    </main>
+
+  
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <script src="market.js"></script>
+</body>
+</html>
